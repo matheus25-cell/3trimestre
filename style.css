@@ -7,8 +7,8 @@ body{
 font-family: "Poppins", sans-serif;
 }
 header{
-background-color: #424e61;
-color: white;
+background-color: #577fc1;
+color: rgb(92, 90, 90);
 width: 100%;
 padding: 20px;
 }
@@ -108,6 +108,10 @@ text-decoration: none;
 
 .sobre {
     text-align: center;
+
+    p 
+    font-size: 24px;
+
 }
 
 ul {
