@@ -92,3 +92,8 @@ padding: 12px 0;
 color: #ffffff;
 text-decoration: none;
 }
+
+.cabecalho_imagem {
+    width: 120px; 
+    height: auto; 
+}
