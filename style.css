@@ -11,12 +11,12 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: rgb(0, 0, 0);
+    color: rgb(248, 11, 177);
 }
 
 header{
-background-color: #bdb9c4;
-color: #007979;
+background-color: #5112be;
+color: #05db3b;
 width: 100%;
 padding: 80px;
 }
@@ -32,7 +32,7 @@ justify-content: center;
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid gold;
+    border: 3px solid #8B5CF6;
         /* Animação */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -51,7 +51,7 @@ justify-content: center;
 
 .sociais img:hover{
     transform: rotate(10deg) scale(1.2);
-    filter: drop-shadow(0 0 10px gold);
+    filter: drop-shadow(0 0 10px #8B5CF6);
 }
 
 .banner1{
@@ -62,11 +62,11 @@ justify-content: center;
 .estudante_titulo{
     padding: 50px;
     text-align: center;
-    color: rgb(193, 192, 190);
+    color: #FFFFFF;
 }
 .estudante-nome{
     text-align: center;
-    color: #d7d7d3; /* dourado */
+    color: #FFFFFF; /* dourado */
 }
 .estudante-imagem{
     width: 180px;
