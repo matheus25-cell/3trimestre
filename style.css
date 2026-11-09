@@ -102,16 +102,12 @@ text-decoration: none;
 }
 
 .cabecalho_imagem {
-    width: 85px; 
+    width: 90px; 
     height: auto; 
 }
 
 .sobre {
-    text-align: center;
-
-    p 
-    font-size: 24px;
-
+  text-align: center;
 }
 
 ul {
@@ -132,4 +128,10 @@ ul li a {
 
 ul li a:hover {
   background-color: #111111;
+}
+
+.sobre p {
+    font-size: 20px;   /* Deixa o texto do Sobre Mim em destaque */
+    line-height: 1.6;
+    color: #333333;
 }
