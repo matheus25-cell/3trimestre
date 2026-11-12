@@ -11,112 +11,43 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     color: #FFFFFF;
 }
 
-/* AGRUPAMENTOS GERAIS */
-.titulo_site, .estudante_titulo, .estudante-nome, .estudante.div, .estudante-div,
-.escola-titulo, .sobre, .video, main > h1, .certificado, .pagina-social,
-.pagina-social p, .pagina-contato, .pagina-sobre, .pagina-sobre > h1 {
-    text-align: center;
+header {
+    background-color: #222222;
+    width: 100%;
+    padding: 40px;
 }
 
-.estudante_titulo, .escola-titulo, main > h1,
-.pagina-social h1, .pagina-contato h1, .pagina-sobre > h1 {
-    font-size: 40px;
+.cabecalho-itens {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-main > h1, .pagina-social h1, .pagina-contato h1, .pagina-sobre > h1 {
-    text-transform: uppercase;
-}
-
-.certificado, .redes a, .formulario {
-    background-color: #1a1a1a;
-    border-radius: 15px;
-    border: 1px solid #b026ff;
-}
-
-.certificado, .formulario {
-    box-shadow: 0 0 15px rgba(176, 38, 255, 0.4);
-}
-
-.certificado, .redes a, .formulario button {
-    transition: 0.3s;
-}
-
-.certificado:hover, .redes a:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px #b026ff;
-}
-
-.certificado p, .pagina-social p, .pagina-contato p {
-    font-size: 20px;
-}
-
-/* FOTOS SEM ANIMAÇÃO */
 .cabecalho_imagem, .estudante-imagem, .foto-sobre {
     object-fit: cover;
     border-radius: 50%;
 }
 
-.cabecalho_imagem { width: 250px; height: 250px; border: 3px solid #b026ff; }
+.cabecalho_imagem { width: 220px; height: 220px; border: 3px solid #b026ff; }
+
 .estudante-imagem { width: 180px; height: 180px; border: 3px solid #b026ff; }
-.foto-sobre { width: 320px; height: 320px; border: 4px solid #b026ff; box-shadow: 0 0 20px #b026ff; }
 
-/* CABEÇALHO E SEÇÕES */
-header { background-color: #222222; width: 100%; padding: 80px; }
-.cabecalho-itens { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; justify-content: center; }
-.titulo_site { padding: 50px; width: 50%; font-size: 72px; text-shadow: 0 0 10px #b026ff; }
+.foto-sobre { width: 300px; height: 300px; border: 4px solid #b026ff; }
+
+.titulo_site {
+    padding: 40px;
+    text-align: center;
+    width: 50%;
+    font-size: 60px;
+}
+
 .sociais img { width: 40px; }
-.banner1 { display: flex; justify-content: center; }
-.estudante_titulo, .escola-titulo, .sobre { padding: 50px; }
-.estudante-nome { font-size: 22px; }
-.estudante-icone { width: 38px; padding: 4px 8px; }
-.estudante { background-color: #121212; }
-.estudante.div, .estudante-div { padding: 24px 0; justify-content: space-around; }
-.estudantes_todos { display: flex; justify-content: space-around; gap: 40px; flex-wrap: wrap; }
-.escola-image { width: 60%; max-width: 800px; height: auto; }
-.logo_rodape { height: 80px; padding: 12px 0; background-color: #222222; }
-.link { color: #b026ff; text-decoration: none; }
-.sobre h2 { margin-bottom: 20px; font-size: 32px; text-shadow: 0 0 8px #b026ff; }
-.sobre p { max-width: 800px; margin: 0 auto; font-size: 22px; line-height: 1.6; }
-.video, .pagina-social, .pagina-contato { padding: 40px 20px; }
-.video h2 { margin-bottom: 20px; font-size: 36px; }
-.video iframe { display: block; margin: 0 auto; width: 80%; max-width: 800px; aspect-ratio: 16 / 9; border: 2px solid #b026ff; box-shadow: 0 0 20px rgba(176, 38, 255, 0.6); border-radius: 15px; }
 
-/* CERTIFICADOS */
-main > h1 { margin: 40px 0 30px; }
-.certificados { display: flex; justify-content: center; align-items: flex-start; gap: 30px; flex-wrap: wrap; padding: 20px; }
-.certificado { width: 450px; padding: 20px; }
-.certificado img { width: 100%; height: auto; border-radius: 10px; }
-.certificado h2 { font-size: 26px; margin-top: 15px; }
-
-/* SOCIAL E CONTATO */
-.pagina-social h1 { margin-bottom: 20px; }
-.pagina-contato h1 { margin-bottom: 15px; }
-.redes { display: flex; justify-content: center; align-items: center; gap: 50px; margin-top: 50px; }
-.redes a { width: 180px; padding: 20px; text-decoration: none; color: #FFFFFF; box-shadow: 0 0 15px rgba(176, 38, 255, 0.3); }
-.redes a:hover { background-color: #b026ff; }
-.redes img { width: 100px; height: 100px; object-fit: contain; display: block; margin: auto; }
-.redes span { display: block; margin-top: 15px; font-size: 24px; font-weight: bold; }
-.formulario { width: 500px; max-width: 90%; margin: 40px auto; padding: 30px; display: flex; flex-direction: column; gap: 10px; }
-.formulario label { text-align: left; font-weight: bold; font-size: 18px; }
-.formulario input, .formulario textarea { padding: 12px; border: 1px solid #b026ff; background-color: #000000; color: #FFFFFF; border-radius: 8px; font-size: 18px; font-family: Arial, sans-serif; }
-.formulario textarea { resize: vertical; }
-.formulario button { margin-top: 15px; padding: 12px; border: none; border-radius: 8px; background-color: #b026ff; color: #FFFFFF; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px #b026ff; }
-.formulario button:hover { background-color: #FFFFFF; color: #000000; box-shadow: 0 0 25px #b026ff; transform: scale(1.03); }
-
-/* PÁGINA SOBRE */
-.pagina-sobre { padding: 50px 40px; }
-.pagina-sobre > h1 { margin-bottom: 70px; }
-.sobre-conteudo { max-width: 1100px; margin: auto; display: flex; align-items: center; justify-content: center; gap: 90px; }
-.texto-sobre { max-width: 650px; text-align: left; }
-.texto-sobre h2 { margin-top: 30px; margin-bottom: 10px; font-size: 32px; }
-.texto-sobre h2:first-child { margin-top: 0; }
-.texto-sobre p { font-size: 28px; line-height: 1.8; margin-bottom: 15px; }
-
-/* MENUS ORIGINAIS */
 nav {
     background-color: #222222;
 }
@@ -145,6 +76,183 @@ nav li a:hover {
     box-shadow: 0 0 15px #b026ff;
 }
 
+.banner1 { display: flex; justify-content: center; }
+
+.estudante { background-color: #121212; padding: 24px 0; }
+
+.estudante_titulo, .escola-titulo {
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.estudantes_todos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.estudante-div { text-align: center; padding: 24px 0; }
+
+.estudante-nome { text-align: center; font-size: 22px; margin-top: 10px; }
+
+.estudante-icone { width: 38px; padding: 4px 8px; }
+
+.escola { padding: 24px 0; text-align: center; }
+
+.escola-image { width: 60%; max-width: 800px; }
+
+.sobre { text-align: center; padding: 50px 20px; }
+
+.sobre h2 { margin-bottom: 20px; font-size: 32px; }
+
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.video { text-align: center; padding: 40px 20px; }
+
+.video h2 { margin-bottom: 20px; font-size: 36px; }
+
+.video iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border: 2px solid #b026ff;
+    border-radius: 15px;
+}
+
+main > h1, .pagina-social h1, .pagina-contato h1, .pagina-sobre > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+main > h1 { margin: 40px 0 30px; }
+
+.certificados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.certificado {
+    width: 450px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #b026ff;
+}
+
+.certificado img { width: 100%; border-radius: 10px; }
+
+.certificado h2 { font-size: 26px; margin-top: 15px; }
+
+.certificado p, .pagina-social p, .pagina-contato p { font-size: 20px; }
+
+.pagina-social, .pagina-contato { text-align: center; padding: 40px 20px; }
+
+.pagina-social h1, .pagina-contato h1 { margin-bottom: 20px; }
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.redes a {
+    width: 180px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #b026ff;
+}
+
+.redes a:hover { background-color: #b026ff; }
+
+.redes img { width: 100px; height: 100px; object-fit: contain; }
+
+.redes span {
+    display: block;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.formulario {
+    width: 500px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    border: 1px solid #b026ff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label { text-align: left; font-weight: bold; font-size: 18px; }
+
+.formulario input, .formulario textarea {
+    padding: 12px;
+    border: 1px solid #b026ff;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.formulario button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b026ff;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover { background-color: #FFFFFF; color: #000000; }
+
+.pagina-sobre { padding: 50px 40px; text-align: center; }
+
+.pagina-sobre > h1 { margin-bottom: 60px; }
+
+.sobre-conteudo {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.texto-sobre { max-width: 650px; text-align: left; }
+
+.texto-sobre h2 { margin-top: 30px; margin-bottom: 10px; font-size: 32px; }
+
+.texto-sobre p { font-size: 24px; line-height: 1.6; margin-bottom: 15px; }
+
+.logo_rodape { height: 80px; padding: 12px 0; background-color: #222222; }
+
+.link { color: #b026ff; text-decoration: none; }
+
+/* MENU */
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -168,6 +276,8 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
+
+/* MENU DROP */
 
 .dropbtn {
   background-color: #333333;
@@ -210,4 +320,4 @@ ul li a:hover {
 
 .dropdown:hover .dropbtn {
   background-color: #333333;
-} 
+}
