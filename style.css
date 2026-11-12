@@ -251,7 +251,7 @@ main > h1 { margin: 40px 0 30px; }
 
 .link { color: #b026ff; text-decoration: none; }
 
-/* MENU */
+/* MENU Horizontal */
 
 ul {
   list-style-type: none;
@@ -260,26 +260,22 @@ ul {
   overflow: hidden;
   background-color: #333333;
 }
-
-ul li {
+ ul li {
   float: left;
 }
-
-ul li a {
+ ul li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-
-ul li a:hover {
+ ul li a:hover {
   background-color: #111111;
 }
 
-/* MENU DROP */
-
-.dropbtn {
+/* MENU Droup */
+ .dropbtn {
   background-color: #333333;
   color: rgb(233, 237, 240);
   padding: 16px;
@@ -287,13 +283,11 @@ ul li a:hover {
   border: none;
   cursor: pointer;
 }
-
-.dropdown {
+ .dropdown {
   position: relative;
   display: inline-block;
 }
-
-.dropdown-content {
+ .dropdown-content {
   display: none;
   position: absolute;
   right: 0;
@@ -302,22 +296,18 @@ ul li a:hover {
   box-shadow: 0px 8px 16px 0px rgba(72, 5, 228, 0.2);
   z-index: 1;
 }
-
-.dropdown-content a {
+ .dropdown-content a {
   color: rgb(247, 244, 244);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-.dropdown-content a:hover {
+ .dropdown-content a:hover {
   background-color: #464545;
 }
-
-.dropdown:hover .dropdown-content {
+ .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.dropdown:hover .dropbtn {
+ .dropdown:hover .dropbtn {
   background-color: #333333;
 }
