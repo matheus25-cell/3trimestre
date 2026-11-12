@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
     background-image: url("Design sem nome.png");
@@ -15,176 +15,109 @@ body{
     color: #FFFFFF;
 }
 
-header{
-background-color: #222222;
-color: #FFFFFF;
-width: 100%;
-padding: 80px;
-}
-.cabecalho-itens{
-max-width: 1000px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.cabecalho_imagem{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #b026ff;
-        /* Animação */
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.titulo_site{
-    padding: 50px;
+/* AGRUPAMENTOS GERAIS */
+.titulo_site, .estudante_titulo, .estudante-nome, .estudante.div, .estudante-div,
+.escola-titulo, .sobre, .video, main > h1, .certificado, .pagina-social,
+.pagina-social p, .pagina-contato, .pagina-sobre, .pagina-sobre > h1 {
     text-align: center;
-    width: 50%;
-    font-size: 72px;
-    color: #FFFFFF;
-    text-shadow: 0 0 10px #b026ff;
-}
-.sociais img{
-    width: 40px;
-    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.sociais img:hover{
-    transform: rotate(10deg) scale(1.2);
-    filter: drop-shadow(0 0 12px #b026ff);
-}
-
-.banner1{
-display: flex;
-color: #FFFFFF;
-justify-content: center;
-}
-.estudante_titulo{
-    padding: 50px;
-    text-align: center;
-    color: #FFFFFF;
+.estudante_titulo, .escola-titulo, main > h1,
+.pagina-social h1, .pagina-contato h1, .pagina-sobre > h1 {
     font-size: 40px;
 }
-.estudante-nome{
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 22px;
+
+main > h1, .pagina-social h1, .pagina-contato h1, .pagina-sobre > h1 {
+    text-transform: uppercase;
 }
-.estudante-imagem{
-    width: 180px;
-    height: 180px;
+
+.certificado, .redes a, .formulario {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    border: 1px solid #b026ff;
+}
+
+.certificado, .formulario {
+    box-shadow: 0 0 15px rgba(176, 38, 255, 0.4);
+}
+
+.certificado, .redes a, .formulario button {
+    transition: 0.3s;
+}
+
+.certificado:hover, .redes a:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #b026ff;
+}
+
+.certificado p, .pagina-social p, .pagina-contato p {
+    font-size: 20px;
+}
+
+/* FOTOS SEM ANIMAÇÃO */
+.cabecalho_imagem, .estudante-imagem, .foto-sobre {
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #b026ff;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}.estudante-imagem:hover{
-    transform: translateY(-12px) scale(1.08);
-    box-shadow: 0 0 25px #b026ff;
-    cursor: pointer;
-}
-.estudante-icone{
-width: 38px;
-padding: 4px 8px;
-}
-.estudante{
-    background-color: #121212;
 }
 
-.estudante.div{
-text-align: center;
-padding: 24px 0;
-justify-content: space-around;
-}
-.estudantes_todos{
-display: flex;
-justify-content: space-around;
-}
-.escola-image{
-    width: 60%;
-    max-width: 800px;
-    height: auto;
-}
-.escola-titulo{
-padding: 50px;
-text-align: center;
-font-size: 40px;
-color: #FFFFFF;
-}
-.logo_rodape{
-height: 80px;
-padding: 12px 0;
-background-color: #222222;
-}
+.cabecalho_imagem { width: 250px; height: 250px; border: 3px solid #b026ff; }
+.estudante-imagem { width: 180px; height: 180px; border: 3px solid #b026ff; }
+.foto-sobre { width: 320px; height: 320px; border: 4px solid #b026ff; box-shadow: 0 0 20px #b026ff; }
 
-.link{
-color: #b026ff;
-text-decoration: none;
-}.estudantes_todos{
-    display: flex;
-    justify-content: align-items;
-    gap: 40px;
-    flex-wrap: wrap;
-}
+/* CABEÇALHO E SEÇÕES */
+header { background-color: #222222; width: 100%; padding: 80px; }
+.cabecalho-itens { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; justify-content: center; }
+.titulo_site { padding: 50px; width: 50%; font-size: 72px; text-shadow: 0 0 10px #b026ff; }
+.sociais img { width: 40px; }
+.banner1 { display: flex; justify-content: center; }
+.estudante_titulo, .escola-titulo, .sobre { padding: 50px; }
+.estudante-nome { font-size: 22px; }
+.estudante-icone { width: 38px; padding: 4px 8px; }
+.estudante { background-color: #121212; }
+.estudante.div, .estudante-div { padding: 24px 0; justify-content: space-around; }
+.estudantes_todos { display: flex; justify-content: space-around; gap: 40px; flex-wrap: wrap; }
+.escola-image { width: 60%; max-width: 800px; height: auto; }
+.logo_rodape { height: 80px; padding: 12px 0; background-color: #222222; }
+.link { color: #b026ff; text-decoration: none; }
+.sobre h2 { margin-bottom: 20px; font-size: 32px; text-shadow: 0 0 8px #b026ff; }
+.sobre p { max-width: 800px; margin: 0 auto; font-size: 22px; line-height: 1.6; }
+.video, .pagina-social, .pagina-contato { padding: 40px 20px; }
+.video h2 { margin-bottom: 20px; font-size: 36px; }
+.video iframe { display: block; margin: 0 auto; width: 80%; max-width: 800px; aspect-ratio: 16 / 9; border: 2px solid #b026ff; box-shadow: 0 0 20px rgba(176, 38, 255, 0.6); border-radius: 15px; }
 
-.estudante-div{
-    text-align: center;
-}
-body{
-    color: #FFFFFF;
-}
-.escola{
-    color: #FFFFFF;
-}
-.sobre{
-    text-align: center;
-    padding: 50px;
-    color: #FFFFFF;
-}
+/* CERTIFICADOS */
+main > h1 { margin: 40px 0 30px; }
+.certificados { display: flex; justify-content: center; align-items: flex-start; gap: 30px; flex-wrap: wrap; padding: 20px; }
+.certificado { width: 450px; padding: 20px; }
+.certificado img { width: 100%; height: auto; border-radius: 10px; }
+.certificado h2 { font-size: 26px; margin-top: 15px; }
 
-.sobre h2{
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    font-size: 32px;
-    text-shadow: 0 0 8px #b026ff;
-}
+/* SOCIAL E CONTATO */
+.pagina-social h1 { margin-bottom: 20px; }
+.pagina-contato h1 { margin-bottom: 15px; }
+.redes { display: flex; justify-content: center; align-items: center; gap: 50px; margin-top: 50px; }
+.redes a { width: 180px; padding: 20px; text-decoration: none; color: #FFFFFF; box-shadow: 0 0 15px rgba(176, 38, 255, 0.3); }
+.redes a:hover { background-color: #b026ff; }
+.redes img { width: 100px; height: 100px; object-fit: contain; display: block; margin: auto; }
+.redes span { display: block; margin-top: 15px; font-size: 24px; font-weight: bold; }
+.formulario { width: 500px; max-width: 90%; margin: 40px auto; padding: 30px; display: flex; flex-direction: column; gap: 10px; }
+.formulario label { text-align: left; font-weight: bold; font-size: 18px; }
+.formulario input, .formulario textarea { padding: 12px; border: 1px solid #b026ff; background-color: #000000; color: #FFFFFF; border-radius: 8px; font-size: 18px; font-family: Arial, sans-serif; }
+.formulario textarea { resize: vertical; }
+.formulario button { margin-top: 15px; padding: 12px; border: none; border-radius: 8px; background-color: #b026ff; color: #FFFFFF; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px #b026ff; }
+.formulario button:hover { background-color: #FFFFFF; color: #000000; box-shadow: 0 0 25px #b026ff; transform: scale(1.03); }
 
-.sobre p{
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 22px;
-    line-height: 1.6;
-    color: #FFFFFF;
-}.cabecalho_imagem:hover{
-    transform: translateY(-15px) scale(1.05);
-    box-shadow: 0 0 30px #b026ff;
-}.video {
-    text-align: center;
-    padding: 40px 20px;
-}
+/* PÁGINA SOBRE */
+.pagina-sobre { padding: 50px 40px; }
+.pagina-sobre > h1 { margin-bottom: 70px; }
+.sobre-conteudo { max-width: 1100px; margin: auto; display: flex; align-items: center; justify-content: center; gap: 90px; }
+.texto-sobre { max-width: 650px; text-align: left; }
+.texto-sobre h2 { margin-top: 30px; margin-bottom: 10px; font-size: 32px; }
+.texto-sobre h2:first-child { margin-top: 0; }
+.texto-sobre p { font-size: 28px; line-height: 1.8; margin-bottom: 15px; }
 
-.video {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.video h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: #FFFFFF;
-}
-
-.video iframe {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 800px;
-    aspect-ratio: 16 / 9;
-    border: 2px solid #b026ff;
-    box-shadow: 0 0 20px rgba(176, 38, 255, 0.6);
-    border-radius: 15px;
-}nav {
+/* MENUS ORIGINAIS */
+nav {
     background-color: #222222;
 }
 
@@ -212,267 +145,6 @@ nav li a:hover {
     box-shadow: 0 0 15px #b026ff;
 }
 
-
-main > h1 {
-    text-align: center;
-    margin: 40px 0 30px;
-    font-size: 40px;
-    color: #FFFFFF;
-}
-
- 
-
-.certificados {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
- 
-
-.certificado {
-    width: 450px;
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    border: 1px solid #b026ff;
-    box-shadow: 0 0 15px rgba(176, 38, 255, 0.4);
-    transition: 0.3s;
-}
-
-
-/* EFEITO AO PASSAR O MOUSE */
-
-.certificado:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px #b026ff;
-}
-
- 
-
-.certificado img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
- 
- 
-.certificado h2 {
-    font-size: 26px;
-    margin-top: 15px;
-    color: #FFFFFF;
-}
- 
- 
-.certificado p {
-    font-size: 20px;
-    color: #FFFFFF;
-}main > h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 40px 0 30px;
-    font-size: 40px;
-    color: #FFFFFF;}
-.pagina-social {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.pagina-social h1 {
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    font-size: 40px;
-}
-
-.pagina-social p {
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 20px;
-}
-
-.redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin-top: 50px;
-}
-
-.redes a {
-    width: 180px;
-    padding: 20px;
-    background-color: #1a1a1a;
-    border-radius: 15px;
-    text-decoration: none;
-    color: #FFFFFF;
-    border: 1px solid #b026ff;
-    box-shadow: 0 0 15px rgba(176, 38, 255, 0.3);
-    transition: 0.3s;
-}
-
-.redes a:hover {
-    transform: translateY(-10px);
-    background-color: #b026ff;
-    color: #FFFFFF;
-    box-shadow: 0 0 25px #b026ff;
-}
-
-.redes img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-}
-
-.redes span {
-    display: block;
-    margin-top: 15px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #FFFFFF;
-}.pagina-contato {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.pagina-contato h1 {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
-
-.pagina-contato p {
-    color: #FFFFFF;
-    font-size: 20px;
-}
-
-.formulario {
-    width: 500px;
-    max-width: 90%;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #1a1a1a;
-    border-radius: 15px;
-    border: 1px solid #b026ff;
-    box-shadow: 0 0 15px rgba(176, 38, 255, 0.4);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.formulario label {
-    color: #FFFFFF;
-    text-align: left;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.formulario input,
-.formulario textarea {
-    padding: 12px;
-    border: 1px solid #b026ff;
-    background-color: #000000;
-    color: #FFFFFF;
-    border-radius: 8px;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-}
-
-.formulario textarea {
-    resize: vertical;
-}
-
-.formulario button {
-    margin-top: 15px;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background-color: #b026ff;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 0 15px #b026ff;
-    transition: 0.3s;
-}
-
-.formulario button:hover {
-    background-color: #FFFFFF;
-    color: #000000;
-    box-shadow: 0 0 25px #b026ff;
-    transform: scale(1.03);
-}
-
-.pagina-sobre {
-    padding: 50px 40px;
-    text-align: center;
-}
-
-.pagina-sobre > h1 {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin-bottom: 70px;
-    font-size: 40px;
-}
-
-.sobre-conteudo {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.foto-sobre {
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #b026ff;
-    box-shadow: 0 0 20px #b026ff;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
- 
-
-.foto-sobre:hover {
-    transform: translateY(-15px) scale(1.05);
-    box-shadow: 0 0 30px #b026ff;
-}
-
-.texto-sobre {
-    max-width: 650px;
-    text-align: left;
-    color: #FFFFFF;
-}
-
-.texto-sobre h2 {
-    color: #FFFFFF;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 32px;
-}
-
-.texto-sobre h2:first-child {
-    margin-top: 0;
-}
-
-.texto-sobre p {
-    font-size: 28px;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    color: #FFFFFF;
-}
-
-/* MENU */
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -496,8 +168,6 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
-
-/* MENU DROP */
 
 .dropbtn {
   background-color: #333333;
@@ -540,4 +210,4 @@ ul li a:hover {
 
 .dropdown:hover .dropbtn {
   background-color: #333333;
-}
+} 
