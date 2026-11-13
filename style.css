@@ -76,10 +76,8 @@ nav li a:hover {
     box-shadow: 0 0 15px #b026ff;
 }
 
-.banner1 { display: flex; justify-content: center; 
-    padding: 60px;
-}
-
+.banner1 { display: flex; justify-content: center;}
+  
 .estudante { background-color: #121212; padding: 24px 0; }
 
 .estudante_titulo, .escola-titulo {
